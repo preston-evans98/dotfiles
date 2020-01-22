@@ -8,10 +8,10 @@ alias pi="ssh admin@192.168.1.3"
 alias seeip="curl ipinfo.io/ip"
 alias scm="scheme --quiet <"
 alias refresh="source ~/.bash_profile"
-alias spongebob="python /Users/prestonevans/Developer/pythonLibrary/spongebob.py"
+alias spongebob="python ~/.utils/spongebob.py"
 alias dv="cd ~/Developer"
 primetest(){
-  scheme --quiet --args $1 < /Users/prestonevans/Developer/lisp/utils/test-prime.scm
+  scheme --quiet --args $1 < ~/.utils/test-prime.scm
 }  
 ndir(){
   mkdir $1;
