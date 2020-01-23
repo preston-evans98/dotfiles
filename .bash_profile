@@ -9,6 +9,7 @@ alias seeip="curl ipinfo.io/ip"
 alias scm="scheme --quiet <"
 alias refresh="source ~/.bash_profile"
 alias spongebob="python ~/.utils/spongebob.py"
+alias binary="python ~/.utils/binary.py"
 alias dv="cd ~/Developer"
 primetest(){
   scheme --quiet --args $1 < ~/.utils/test-prime.scm
