@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -o vi
 
 alias decrypt="keybase pgp decrypt -m"
 alias tellJ="keybase pgp encrypt jamesonev -m"
@@ -11,9 +14,18 @@ alias refresh="source ~/.bash_profile"
 alias spongebob="python ~/.utils/spongebob.py"
 alias binary="python ~/.utils/binary.py"
 alias dv="cd ~/Developer"
+alias ls="ls -hG"
+alias mkdir="mkdir -p"
+alias ll="ls -lv"
+alias la="ls -a"
+alias v='f -e vim' # quick opening files with vim
+alias o='a -e open' #Change to xdg-open (from open) for Linux
 primetest(){
   scheme --quiet --args $1 < ~/.utils/test-prime.scm
 }  
+hex() {
+  python ~/.utils/binary.py $1 hex
+}
 ndir(){
   mkdir $1;
   cd $1; 
@@ -35,5 +47,6 @@ export PATH="/usr/local/bin/:$PATH"
 export PATH="/usr/local/lib/node_modules/:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+eval "$(fasd --init auto)"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
