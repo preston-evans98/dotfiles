@@ -6,13 +6,15 @@ alias decrypt="keybase pgp decrypt -m"
 alias tellJ="keybase pgp encrypt jamesonev -m"
 alias bashprofile="vim ~/.bash_profile"
 alias forget="rm ~/.bash_history"
-alias bandit="bandit.labs.overthewire.org"
-alias pi="ssh admin@192.168.1.3"
+alias pi="ssh pi"
 alias seeip="curl ipinfo.io/ip"
 alias scm="scheme --quiet <"
 alias refresh="source ~/.bash_profile"
-alias spongebob="python ~/.utils/spongebob.py"
-alias binary="python ~/.utils/binary.py"
+alias spongebob="~/dotfiles/.utils/spongebob.py"
+alias binary="~/dotfiles/.utils/binary.py"
+alias hex="~/dotfiles/.utils/hex.py"
+alias math-log="~/dotfiles/.utils/log.py"
+alias lg="~/dotfiles/.utils/log.py 2"
 alias dv="cd ~/Developer"
 alias ls="ls -hG"
 alias mkdir="mkdir -p"
@@ -20,12 +22,13 @@ alias ll="ls -lv"
 alias la="ls -a"
 alias v='f -e vim' # quick opening files with vim
 alias o='a -e open' #Change to xdg-open (from open) for Linux
+alias gs="git status"
+alias gc="git commit"
+alias mkdir="mkdir -p"
+
 primetest(){
-  scheme --quiet --args $1 < ~/.utils/test-prime.scm
+  scheme --quiet --args $1 < ~/dotfiles/.utils/test-prime.scm
 }  
-hex() {
-  python ~/.utils/binary.py $1 hex
-}
 ndir(){
   mkdir $1;
   cd $1; 
