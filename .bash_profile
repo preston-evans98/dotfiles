@@ -44,12 +44,12 @@ textme() {
 
 # osascript -e "using terms from application "Messages" on message received theMessage from \"Preston Evans\ tell application iTerm2 decrypt theMessage"  
 # using terms from application "Messages"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/prestonevans/Library/Python/3.7/bin:$PATH"
-export PATH="/usr/local/bin/:$PATH"
-export PATH="/usr/local/lib/node_modules/:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
+# export PATH="/Users/prestonevans/Library/Python/3.7/bin:$PATH"
+# export PATH="/usr/local/bin/:$PATH"
+# export PATH="/usr/local/lib/node_modules/:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 eval "$(fasd --init auto)"
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
