@@ -20,6 +20,9 @@ Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Raimondi/delimitMate'
+Plugin 'morhetz/gruvbox'
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,7 +96,11 @@ set hidden
 
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme base16-gruvbox-dark-hard
+let g:gruvbox_termcolors=16
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+" colorscheme solarized
 
 set clipboard=unnamedplus
 
