@@ -102,7 +102,7 @@ let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 " colorscheme solarized
 
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 " This setting makes search case-insensitive when all characters in the string
 " being searched are lowercase. However, the search becomes case-sensitive if

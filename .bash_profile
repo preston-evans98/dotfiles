@@ -9,7 +9,7 @@ alias forget="rm ~/.bash_history"
 alias pi="ssh pi"
 alias seeip="curl ipinfo.io/ip"
 alias scm="scheme --quiet <"
-alias refresh="source ~/.bash_profile"
+alias refresh="source ~/.bash_profile" 
 alias spongebob="~/dotfiles/.utils/spongebob.py"
 alias binary="~/dotfiles/.utils/binary.py"
 alias hex="~/dotfiles/.utils/hex.py"
@@ -25,6 +25,7 @@ alias o='a -e open' #Change to xdg-open (from open) for Linux
 alias gs="git status"
 alias gc="git commit"
 alias mkdir="mkdir -p"
+alias tmuxconf="vim ~/.tmux.conf"
 
 primetest(){
   scheme --quiet --args $1 < ~/dotfiles/.utils/test-prime.scm
@@ -48,8 +49,10 @@ textme() {
 # export PATH="/Users/prestonevans/Library/Python/3.7/bin:$PATH"
 # export PATH="/usr/local/bin/:$PATH"
 # export PATH="/usr/local/lib/node_modules/:$PATH"
-# export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 eval "$(fasd --init auto)"
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+PS1="\w$ "
 # test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
