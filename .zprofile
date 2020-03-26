@@ -4,12 +4,13 @@ set -o vi
 
 alias decrypt="keybase pgp decrypt -m"
 alias tellJ="keybase pgp encrypt jamesonev -m"
-alias bashprofile="vim ~/.bash_profile"
+alias bashprofile="vim ~/.zprofile"
+alias zprofile="vim ~/.zprofile"
 alias forget="rm ~/.bash_history"
 alias pi="ssh pi"
 alias seeip="curl ipinfo.io/ip"
 alias scm="scheme --quiet <"
-alias refresh="source ~/.bash_profile" 
+alias refresh="source ~/.zprofile" 
 alias spongebob="~/dotfiles/.utils/spongebob.py"
 alias binary="~/dotfiles/.utils/binary.py"
 alias hex="~/dotfiles/.utils/hex.py"
@@ -53,6 +54,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 eval "$(fasd --init auto)"
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
-PS1="\w$ "
+PROMPT="%~$ "
 # test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
